@@ -34,7 +34,7 @@ h1{
     box-shadow: 7px 4px rgb(1, 160, 252);
     color: rgb(5, 4, 4);
     text-align: center;
-    margin: 10px;
+    margin: 10px 15px 50px 10px;
     display: flex;
     flex-direction: column;
 }
@@ -47,8 +47,7 @@ h1{
 }
 
 .descricao{
-    background-color: #ff78cb;
-    border-bottom: 15px solid #ff009d;
+    background: linear-gradient(to bottom, #c978ff, #6a00ff);
     margin-top: 10px;
     max-width: 100%; /* Impede que o elemento exceda a largura do card */
     max-height: 100%; /* Impede que o elemento exceda a altura do card */
