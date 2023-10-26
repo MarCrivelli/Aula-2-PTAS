@@ -24,10 +24,12 @@ h1{
     display: flex; 
     justify-content: center; /* Centraliza horizontalmente os containers */
     flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+    text-align: center;
 }
 
 .card{
-    width: 20%;
+    width: auto;
+    height: 100%;
     border: 2px solid #e4e4e4;
     border-radius: 8px;
     background-color: #f0f0f0;
@@ -35,8 +37,22 @@ h1{
     color: rgb(5, 4, 4);
     text-align: center;
     margin: 10px 15px 50px 10px;
-    display: flex;
     flex-direction: column;
+}
+
+a{
+    width: 92%;
+    border: 2px solid #e4e4e4;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    box-shadow: 7px 4px rgb(1, 160, 252);
+    color: rgb(5, 4, 4);
+    text-align: center;
+    font-size: 26px;
+    margin: 10px 15px 1px 10px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
 }
 
 .imagem{

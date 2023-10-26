@@ -9,8 +9,31 @@ app.get('/', (req, res) => {
   res.render('index', { message: 'Lojinha do Crivelli' });
 });
 
-app.get('/contato', (req, res) => {
-  res.render('contato', { message: 'Oi, tudo bem?' });
+const carros = [
+  {id: 1, nome: "carro 1", preco: 200230, imagem: "carro.png", descricao: "carro automático de luxo"},
+  {id: 2, nome: "carro 2", preco: 200230, imagem: "carro.png", descricao: "carro automático de luxo"},
+  {id: 3, nome: "carro 3", preco: 200230, imagem: "carro.png", descricao: "carro automático de luxo"},
+  {id: 4, nome: "carro 4", preco: 200230, imagem: "carro.png", descricao: "carro automático de luxo"}
+]
+
+app.get('/produtos', (req, res) => {
+  res.render('carro1', { message: 'Carrinho de compras' });
+});
+
+app.get('/produtos2', (req, res) => {
+  res.render('carro2', { message: 'Carrinho de compras' });
+});
+
+app.get('/produtos3', (req, res) => {
+  res.render('carro3', { message: 'Carrinho de compras' });
+});
+
+app.get('/produtos4', (req, res) => {
+  res.render('carro4', { message: 'Carrinho de compras' });
+});
+
+app.get('/inicio', (req, res) => {
+  res.render('index', { message: 'Lojinha do marco' });
 });
 
 app.listen(port, () => {
