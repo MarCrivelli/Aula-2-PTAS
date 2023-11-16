@@ -11,7 +11,7 @@ body {
 }
 
 .faixa{
-    background: linear-gradient(to bottom, #81dbff, #06a0dd, #0779a7);
+    background: linear-gradient(to top, #24b9f4, #0779a7);
 }
 
 h1{
@@ -33,7 +33,6 @@ h1{
     border: 2px solid #e4e4e4;
     border-radius: 8px;
     background-color: #f0f0f0;
-    box-shadow: 7px 4px rgb(1, 160, 252);
     color: rgb(5, 4, 4);
     text-align: center;
     margin: 10px 15px 50px 10px;
@@ -42,17 +41,18 @@ h1{
 
 a{
     width: 92%;
-    border: 2px solid #e4e4e4;
+    border: 2px solid #5c5c5c;
     border-radius: 8px;
-    background-color: #f0f0f0;
-    box-shadow: 7px 4px rgb(1, 160, 252);
-    color: rgb(5, 4, 4);
+    background-color: #595959;
+    color: rgb(255, 255, 255);
     text-align: center;
+    padding: 2px;
     font-size: 26px;
     margin: 10px 15px 1px 10px;
     display: flex;
     flex-direction: row;
     text-decoration: none;
+    font-family: sans-serif;
 }
 
 .imagem{
@@ -63,20 +63,19 @@ a{
 }
 
 .descricao{
-    background: linear-gradient(to bottom, #c978ff, #6a00ff);
     margin-top: 10px;
     max-width: 100%; /* Impede que o elemento exceda a largura do card */
     max-height: 100%; /* Impede que o elemento exceda a altura do card */
     flex-grow: 1; /* Faz com que a descrição ocupe o espaço restante vertical */
     display: flex;
     flex-direction: column;
-    border-radius: 8px;
 }
 
 h2{
    color: white;
    font-size: 20px;
    position: relative;
+   background: linear-gradient(to bottom, #c978ff, #6a00ff);
 }
 
 

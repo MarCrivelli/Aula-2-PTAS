@@ -11,10 +11,17 @@ app.get('/', (req, res) => {
 
 const carros = [
   {id: 1, nome: "carro 1", preco: 200230, imagem: "carro.png", descricao: "carro automático de luxo"},
-  {id: 2, nome: "carro 2", preco: 200230, imagem: "carro.png", descricao: "carro automático de luxo"},
-  {id: 3, nome: "carro 3", preco: 200230, imagem: "carro.png", descricao: "carro automático de luxo"},
-  {id: 4, nome: "carro 4", preco: 200230, imagem: "carro.png", descricao: "carro automático de luxo"}
+  {id: 2, nome: "carro 2", preco: 200230, imagem: "carro.png", descricao: "carro automático de luxo2"},
+  {id: 3, nome: "carro 3", preco: 200230, imagem: "carro.png", descricao: "carro automático de luxo3"},
+  {id: 4, nome: "carro 4", preco: 200230, imagem: "carro.png", descricao: "carro automático de luxo4"}
 ]
+
+function buscarCarroPorId(){
+  const carro = carros.find(carro => carro.id == 3);
+  return carro || null
+}
+
+console.log(buscarCarroPorId(2))
 
 app.get('/produtos', (req, res) => {
   res.render('carro1', { message: 'Carrinho de compras' });
