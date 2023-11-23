@@ -13,20 +13,20 @@
 </nav>
 
   <div class="faixa">
-    <h1><%= message %></h1>
+    <h1>Concessionária Crivelli</h1>
   </div>
 
-<% for (let carro of carros) { %>
-<h1>Marco</h1>
-<% } %>
+
 
 <div class="card-container">
-  <div class="card">
-    <img class="imagem" src="carro.png">
+  <% for (let carro of carros){ %>
+  <div id="<%= carro.id%>" class="card">
+    <img class="imagem" src="<%= carro.imagem%>">
     <div class="descricao">
-      <a href="/produtos">Conversível esportivo antigo</a>
+      <a href="/produtos.ejs"><%= carro.nome%></a>
     </div>
   </div>
+  <% } %>
 </div>
 
   <!-- 

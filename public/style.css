@@ -11,7 +11,8 @@ body {
 }
 
 .faixa{
-    background: linear-gradient(to top, #24b9f4, #0779a7);
+    background: linear-gradient(to left, rgb(176, 255, 254),rgb(144, 253, 253), Aqua, rgb(98, 0, 255));
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
@@ -37,6 +38,8 @@ h1{
     text-align: center;
     margin: 10px 15px 50px 10px;
     flex-direction: column;
+    padding: 30px 0px 30px 0px;
+    
 }
 
 a{
