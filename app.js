@@ -23,24 +23,13 @@ function buscarCarroPorId(){
 
 console.log(buscarCarroPorId(2))
 
-app.get('/produtos', (req, res) => {
-  res.render('carro1', { produtos });
+app.get('/', async function (req, res) {
+  res.render('carros', { carros });
 });
 
-app.get('/produtos2', (req, res) => {
-  res.render('carro2', { message: 'Carrinho de compras' });
-});
-
-app.get('/produtos3', (req, res) => {
-  res.render('carro3', { message: 'Carrinho de compras' });
-});
-
-app.get('/produtos4', (req, res) => {
-  res.render('carro4', { message: 'Carrinho de compras' });
-});
-
-app.get('/inicio', (req, res) => {
-  res.render('index', { message: 'Lojinha do marco' });
+app.get('/carros/:id', async function (req, res){
+  const carro = buscarCarroPorId(req.params.id)
+  res.render('carros/visualizar', { carro });
 });
 
 app.listen(port, () => {
