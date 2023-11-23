@@ -24,7 +24,7 @@ function buscarCarroPorId(){
 console.log(buscarCarroPorId(2))
 
 app.get('/produtos', (req, res) => {
-  res.render('carro1', { message: 'Carrinho de compras' });
+  res.render('carro1', { produtos });
 });
 
 app.get('/produtos2', (req, res) => {
