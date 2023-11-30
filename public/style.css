@@ -84,6 +84,16 @@ div.descricao p{
     text-align: center;
 }
 
+.descricao1{
+    margin-top: 10px;
+    max-width: 100%; /* Impede que o elemento exceda a largura do card */
+    max-height: 100%; /* Impede que o elemento exceda a altura do card */
+    flex-grow: 1; /* Faz com que a descrição ocupe o espaço restante vertical */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 h2{
    color: white;
    font-size: 20px;
