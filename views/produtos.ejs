@@ -6,19 +6,17 @@
 </head>
 <body>
   <div class="faixa">
-    <h1><%= message %></h1>
+    <h1>Concessionária Crivelli</h1>
   </div>
  
   <div class="card-container">
-
-    <div class="card">
-      <img class="imagem" src="carro.png">
+    <div id="<%= carro.id%>" class="card">
+      <img class="imagem" src="<%= carro.imagem%>">
       <div class="descricao">
-        <a href="/inicio">Comprar</a>
-        <a href="/inicio">Voltar</a>
+        <a><%= carro.nome%></a>
+        <p><%= carro.descricao%></p>
       </div>
     </div>
-
   </div>
     
 </body>

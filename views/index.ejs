@@ -1,120 +1,28 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-  <title>Projeto Express e EJS</title>
-  <link rel="stylesheet" type="text/css" href="/style.css">
-</head>
-<body>
 
-<nav>
-  <ul>
-    <li><a></a></li>
-  </ul>
-</nav>
+  <head>
+    <title>Projeto Express e EJS</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  </head>
 
-  <div class="faixa">
-    <h1>Concessionária Crivelli</h1>
-  </div>
-
-
-
-<div class="card-container">
-  <% for (let carro of carros){ %>
-  <div id="<%= carro.id%>" class="card">
-    <img class="imagem" src="<%= carro.imagem%>">
-    <div class="descricao">
-      <a href="/produtos.ejs"><%= carro.nome%></a>
+  <body>
+    <div class="faixa">
+      <h1>Concessionária Crivelli</h1>
     </div>
-  </div>
-  <% } %>
-</div>
-
-  <!-- 
-  <div class="card">
-    <img class="imagem" src="carro.png">
-    <div class="descricao">
-     <h2>Conversível esportivo antigo</h2>
-  </div>
-  </div>
-
-  <div class="card">
-    <img class="imagem" src="carro-2.png">
-    <div class="descricao">
-     <h2>Carro esportivo black deluxe</h2>
-  </div>
-  </div>
-
-  <div class="card">
-    <img class="imagem" src="carro-3.png">
-    <div class="descricao">
-      <h2>Audi Q3 SUV laranja</h2>
+    <div class="card-container">
+      <% for (let carro of carros){ %>
+      <div id="<%= carro.id%>" class="card">
+        <img class="imagem" src="<%= carro.imagem%>">
+        <div class="descricao">
+          <a href="/produtos/<%=carro.id%>"><%= carro.nome%></a>
+          <p><%= carro.descricao%></p>
+        </div>
+      </div>
+      <% } %>
     </div>
-  </div>
 
-  <div class="card">
-    <img class="imagem" src="carro-4.png">
-    <div class="descricao">
-      <h2>BWM branca deluxe</h2>
-    </div>
-  </div>
-
-  <div class="card">
-    <img class="imagem" src="carro.png">
-    <div class="descricao">
-     <h2>Conversível esportivo antigo</h2>
-  </div>
-  </div>
-
-  <div class="card">
-    <img class="imagem" src="carro-2.png">
-    <div class="descricao">
-     <h2>Carro esportivo black deluxe</h2>
-  </div>
-  </div>
-
-  <div class="card">
-    <img class="imagem" src="carro-3.png">
-    <div class="descricao">
-      <h2>Audi Q3 SUV laranja</h2>
-    </div>
-  </div>
-
-  <div class="card">
-    <img class="imagem" src="carro-4.png">
-    <div class="descricao">
-      <h2>BWM branca deluxe</h2>
-    </div>
-  </div>
-
-  <div class="card">
-    <img class="imagem" src="carro.png">
-    <div class="descricao">
-     <h2>Conversível esportivo antigo</h2>
-  </div>
-  </div>
-
-  <div class="card">
-    <img class="imagem" src="carro-2.png">
-    <div class="descricao">
-     <h2>Carro esportivo black deluxe</h2>
-  </div>
-  </div>
-
-  <div class="card">
-    <img class="imagem" src="carro-3.png">
-    <div class="descricao">
-      <h2>Audi Q3 SUV laranja</h2>
-    </div>
-  </div>
-
-  <div class="card">
-    <img class="imagem" src="carro-4.png">
-    <div class="descricao">
-      <h2>BWM branca deluxe</h2>
-    </div>
-  </div>
-  -->
-</div>
-
-</body>
+  </body>
 </html>

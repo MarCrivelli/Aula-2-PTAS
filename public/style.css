@@ -11,7 +11,7 @@ body {
 }
 
 .faixa{
-    background: linear-gradient(to left, rgb(176, 255, 254),rgb(144, 253, 253), Aqua, rgb(98, 0, 255));
+    background: linear-gradient(to left, rgb(98, 0, 255),rgb(144, 253, 253), Aqua, rgb(98, 0, 255));
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -29,8 +29,8 @@ h1{
 }
 
 .card{
-    width: auto;
-    height: 100%;
+    width: 350px;
+    height: 360px;
     border: 2px solid #e4e4e4;
     border-radius: 8px;
     background-color: #f0f0f0;
@@ -39,22 +39,31 @@ h1{
     margin: 10px 15px 50px 10px;
     flex-direction: column;
     padding: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     
 }
 
 a{
     width: 92%;
-    border: 2px solid #5c5c5c;
     border-radius: 8px;
-    background-color: #595959;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 2px;
+    color: rgb(9, 42, 75);
+    padding: 0px 0 0px 35px;
     font-size: 26px;
-    margin: 10px 15px 1px 10px;
     display: flex;
     flex-direction: row;
     text-decoration: none;
+    font-family: sans-serif;
+}
+
+a:hover{
+    color: rgb(86, 34, 228);
+}
+
+div.descricao p{
+    font-size: 21px;
+    color: rgb(9, 42, 75);
     font-family: sans-serif;
 }
 
@@ -72,13 +81,11 @@ a{
     flex-grow: 1; /* Faz com que a descrição ocupe o espaço restante vertical */
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 h2{
    color: white;
    font-size: 20px;
    position: relative;
-   background: linear-gradient(to bottom, #c978ff, #6a00ff);
 }
-
-
