@@ -13,11 +13,13 @@
     <div id="<%= carro.id%>" class="card">
       <img class="imagem" src="/<%= carro.imagem%>">
       <div class="descricao">
-        <a><%= carro.nome%></a>
-        <p><%= carro.descricao%></p>
+        <a href="index.ejs"><%= carro.nome%></a>
+        <p><%= carro.preco%></p>
       </div>
     </div>
   </div>
+
+  <button href="/index">Voltar</button>
     
 </body>
 </html>
